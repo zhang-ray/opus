@@ -5,8 +5,8 @@ build:
   parallel: true
 
 after_build:
-- 7z a Debug.7z .\win32\VS2010\
+- 7z a opus-112-win32-build.7z .\win32\VS2010\ .\include
 
 artifacts:
-- path: .\Debug.7z
+- path: .\opus-112-win32-build.7z
 
