@@ -1,12 +1,12 @@
 os: osx
 language: cpp
 sudo: required
-script: "./configure && make -j8 && cd .. && tar -czf opus.macOS.tar.gz opus"
+script: "./configure && make -j8 && cd .. && tar -czf out.tgz opus && mv out.tgz opus/opus.macOS.tar.gz"
 
 
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
-  file: "../opus.macOS.tar.gz"
+  file: "opus.macOS.tar.gz"
   on:
     tags: true
