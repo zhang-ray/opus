@@ -1,7 +1,7 @@
 os: osx
 language: cpp
 sudo: required
-script: "./configure && make -j8 && cd .. && tar -czf opus.macOS.tar.gz opus"
+script: "./configure && make -j8 && cd .. && tar -czf opus.macOS.tar.gz opus && cd opus"
 
 
 deploy:
